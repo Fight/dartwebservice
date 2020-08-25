@@ -6,8 +6,7 @@ void main() {
   test('adds one to input values', () {
     final webService = WebService2(wsdlString);
     //webService.display();
-    final soap = webService.accessPoints.first
-        .makeSoap('queryObjectOut', {'UTF8XmlDoc': 'asdasdasdadasdaasda'});
+    final soap = webService.accessPoints.first.makeSoap('queryObjectOut', {'UTF8XmlDoc': 'asdasdasdadasdaasda'});
     print("$soap");
     expect(true, true);
   });
